@@ -27,7 +27,7 @@ const marked = (text) => {
     <em key={i}>{match}</em>
   ));
   parsedText = reactStringReplace(parsedText, /~([^~]*)~/gm, (match, i) => (
-    <strike key={i}>{match}</strike>
+    <s key={i}>{match}</s>
   ));
   parsedText = reactStringReplace(parsedText, /```([^`]*)```/gm, (match, i) => (
     <code key={i}>{match}</code>
